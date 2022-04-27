@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+import Home from './pages/home/home';
+import ScrollToTop from './components/scrollToTop/scrollToTop';
+import Blogger from './pages/blogger/blogger';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Navbar />
+                <Routes>
+                    <Route path="/">
+                        <Route index path="/" element={<Home />} />
+                        <Route
+                            index
+                            path="bai-viet/:title/:id"
+                            element={<Blogger />}
+                        />
+                    </Route>
+                </Routes>
+                <ScrollToTop />
+                <Footer />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

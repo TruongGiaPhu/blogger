@@ -1,0 +1,90 @@
+.footer {
+    height: 20rem;
+    width: 100%;
+    background-color: #0b1a33;
+    border-top: 2px solid rgb(67, 189, 67);
+    .footer_container {
+        padding: 0 15rem;
+        .footer_top {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            .footer_logo {
+                span {
+                    font-size: 50px;
+                    font-weight: bold;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+            span {
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            .footer_social {
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+                .footer_links {
+                    list-style-type: none;
+                    li {
+                        margin-top: 10px;
+                        font-weight: 400;
+                        .footer_link {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_bottom {
+            margin-top: 20px;
+            border-top: 2px solid white;
+            span {
+                margin-top: 10px;
+                display: flex;
+                font-size: 2rem;
+                font-weight: 400;
+                color: #fff;
+                justify-content: space-around;
+            }
+
+            ul {
+                display: flex;
+                // gap: 2rem;
+                justify-content: space-around;
+                cursor: pointer;
+                margin-top: 20px;
+                li {
+                    color: white;
+                    .footer_icon {
+                        font-size: 2rem;
+                        color: #fff;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .footer {
+        height: 23rem;
+        .footer_container {
+            padding: 0 3rem;
+            .footer_top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .footer_social {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
