@@ -1,0 +1,100 @@
+.newBlogger {
+    width: 100%;
+    margin-top: 0;
+
+    .newBloggerWrapper {
+        .newBloggerContent {
+            font-weight: 600;
+            padding: 20px;
+        }
+        .newBloggerBody {
+            display: flex;
+            flex: 5;
+            .newBloggerImageList {
+                flex: 1;
+                -webkit-box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.44);
+                box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.44);
+                height: 550px;
+                position: sticky;
+                top: 20px;
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                .newBloggerImage {
+                    &:hover {
+                        cursor: pointer;
+                        position: absolute;
+                    }
+                }
+            }
+            form {
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                .newBloggerInput {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    // h2 {
+                    //     font-size: 30px;
+                    //     white-space: nowrap;
+                    //     font-weight: 600;
+                    // }
+                    .newBloggerTextField {
+                        width: 600px;
+                        // margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .newBloggerContents {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    -webkit-box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.44);
+                    box-shadow: 0px 0px 30px 8px rgba(0, 0, 0, 0.44);
+                    border-radius: 10px;
+                    .newBloggerCloseIcon {
+                        position: relative;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: end;
+                        padding-top: 0.5rem;
+                        padding-right: 0.5rem;
+                        color: red;
+                        &:hover {
+                            color: rgb(196, 44, 44);
+                            opacity: 0.8;
+                        }
+                    }
+
+                    .newBloggerfromContens {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px 50px 50px 50px;
+                        h2 {
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+                        .newBloggerfromTextField {
+                            width: 100%;
+                            margin-top: 15px;
+                        }
+                        label {
+                            //   font-size: 20px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .newBloggerButton {
+            margin-bottom: 30px;
+        }
+    }
+}

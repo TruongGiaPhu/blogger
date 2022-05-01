@@ -1,0 +1,85 @@
+.blogList {
+    width: 100%;
+    margin-top: 5px;
+    .blogListHeader {
+        display: flex;
+        height: 40px;
+        justify-content: end;
+        .blogListAdd {
+            background-color: #2a9d5f;
+            color: white;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    .blogListBody {
+        margin-top: 7px;
+        height: 80vh;
+        border: 1px solid #000000;
+        .blogListItem {
+            display: flex;
+            align-items: center;
+            span {
+                width: 200px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:hover {
+                    margin-left: 50px;
+                    overflow: visible;
+                    position: absolute;
+                    background-color: white;
+                    border-radius: 3px;
+                    border: 1px solid #000;
+                    width: auto;
+                    font-weight: 600;
+                    padding: 5px;
+                }
+            }
+            .blogListImg {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 10px;
+
+                &:hover {
+                    width: 400px;
+                    height: 400px;
+                    object-fit: fill;
+                    position: absolute;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    z-index: 999;
+                    top: 10%;
+                    left: 30%;
+                }
+            }
+        }
+        .blogListEdit {
+            border: none;
+            border-radius: 10px;
+            padding: 5px 10px;
+            background-color: #2a9d5f;
+            color: white;
+            cursor: pointer;
+            margin-right: 20px;
+            margin-left: 10px;
+            &:hover {
+                background-color: #3bb077;
+            }
+        }
+        .blogListDelete {
+            color: var(--red);
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

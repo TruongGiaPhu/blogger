@@ -1,0 +1,29 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 0 30px;
+    border-bottom: 2px solid var(--green);
+    // width: 90%;
+    // position: fixed;
+    // top: 0;
+    // z-index: 99999999;
+
+    .n-left {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .n-right {
+        display: flex;
+        align-items: center;
+        img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            margin-left: 1rem;
+            border: 2px solid rgb(201, 204, 36);
+        }
+    }
+}

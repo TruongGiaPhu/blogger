@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #3399ff;
+    --green: rgb(77, 224, 89);
+    --red: #ff0000;
+}
+
+.App {
+    flex: 6;
+    display: flex;
+    // background-color: rgb(214, 219, 221);
+    height: 100vh;
+}
+
+.appWrapper {
+    flex: 5;
+    // padding: 0 1.5rem;
+    margin-left: 290px;
+}
+
+.appContent {
+    margin: 0 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
