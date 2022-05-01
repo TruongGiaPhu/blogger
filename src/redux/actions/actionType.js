@@ -1,3 +1,0 @@
-export const LOAD_BLOGGER = 'LOAD_BLOGGER';
-export const GET_BLOGGER = 'GET_BLOGGER';
-export const SEARCH_BLOGGER = 'SEARCH_BLOGGER';
